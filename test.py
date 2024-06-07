@@ -1,3 +1,5 @@
+
+import sysconfig; print(sysconfig.get_paths()["purelib"])
 import pymongo
 from datetime import datetime
 

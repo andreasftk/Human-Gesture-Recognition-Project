@@ -3,10 +3,9 @@
 client: "mongodb://localhost:27017/"
 
 # db name
-db: "aiot_course"
-
+db: "AIoT_project"
 # db collection
-col: "sensor_data"
+col: "AIoT_project"
 
 #--------------------- Dataframe Instantiation ----------------------
 # Dataframe columns list
