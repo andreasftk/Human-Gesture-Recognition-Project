@@ -8,6 +8,26 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
+
+def sliding_window_pd(data, ws, overlap, w_type=None, w_center=True, print_stats=True):
+    step_size = int(ws * (1 - overlap))
+    windows = []
+    for start in range(0, len(data) - ws + 1, step_size):
+        end = start + ws
+        window = data[start:end]
+        windows.append(window)
+    return np.array(windows)
+
+
+
+
+
+
+
+
+
+
+
 def sliding_window_pd(
         df,
         ws=500,
@@ -77,6 +97,11 @@ def apply_filter(
 
     return filtered_signal
 
+# from utils import apply_filter
+
+# filtered_data = apply_filter(sample_data, order=5, wn=0.1, filter_type='lowpass')
+
+# sampling_rate = 100  # Define sampling rate in Hz
 
 def filter_instances(
         instances_list,

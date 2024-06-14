@@ -10,13 +10,13 @@ col: "AIoT_project"
 #--------------------- Dataframe Instantiation ----------------------
 # Dataframe columns list
 order: ["X0", "Y0", "Z0","X1", "Y1","Z1"]
-rename: ["acc_x", "acc_y", "acc_z","ger_x", "ger_y", "ger_z"]
+rename: ["acc_x", "acc_y", "acc_z","gyr_x", "gyr_y", "gyr_z"]
 
 #--------------------- Dataset Local Storage ----------------------
 # dataset location
 data_path: "data/"
 # single data instance location path to experiment with the data engineering process and visualization
-single_instance_path: "data/class_A/data_A_01.csv"
+single_instance_path: "data/class_A/data_A_1.csv"
 
 #--------------------- Data Engineering ----------------------
 # sliding window algorithm parameters
