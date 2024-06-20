@@ -5,7 +5,7 @@ Brief descriptions of each file:
    * **Usage:** Run this script first to consolidate data from gyroscope and accelerometer sensors.
 2. **data_segmentation.py**
    * **Purpose:** Segments the `Both.csv` file into movement and no-movement categories.
-   * **Usage:** Execute this script after `merge_csv.py` to categorize the merged data based on movement.
+   * **Usage:** Execute this script after `merge_csv.py` to categorize the merged data based on movement. Select one of the csv files from the previous step and find the best threshold to seperate the movement from the non movement. This process needs to be executed for each `Both.csv` file.
 3. **aiot_data_engineering.ipynb**
    * **Purpose:** Notebook for filtering and windowing the segmented data.
    * **Usage:** Use this notebook to apply filters and create temporal windows for further analysis.
