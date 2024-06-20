@@ -6,7 +6,7 @@ import scipy.signal
 
 
 folder = 'G:/Other computers/My Computer/8 Εξάμηνο/Αλγοριθμικές Θεμελιώσεις Δικτύων Αισθητήρων/Human Gesture Recognition Project/raw_data/segments/'
-file_name = 'KaresiouWear_2024-06-16T19.16.37.356_F5174DCC3C91_WithMovement.csv'
+file_name = 'KaresiouWear_2024-06-18T16.54.31.695_F5174DCC3C91_WithMovement.csv'
 file_path = os.path.join(folder, file_name)
 data = pd.read_csv(file_path)
 data_subset = data.iloc[:].reset_index(drop=True)
