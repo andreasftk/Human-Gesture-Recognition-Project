@@ -19,15 +19,6 @@ def sliding_window_pd(data, ws, overlap, w_type=None, w_center=True, print_stats
     return np.array(windows)
 
 
-
-
-
-
-
-
-
-
-
 def sliding_window_pd(
         df,
         ws=500,
@@ -193,7 +184,7 @@ def df_rebase(
 def rename_df_column_values(
     np_array: np.ndarray, 
     y: list, 
-    columns_names: tuple = ("acc_x", "acc_y", "acc_z")
+    columns_names: tuple = ("acc_x", "acc_y", "acc_z","gyr_x", "gyr_y", "gyr_z")
 ):
     """Creates a DataFrame with a "y" label column and replaces the values of the y with the index
     of the unique values of y.

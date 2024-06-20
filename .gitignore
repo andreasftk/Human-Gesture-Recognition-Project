@@ -4,5 +4,5 @@
 venv/
 ~$xplain.docx
 /__pycache__
-/data
-
+data
+windowed_folder
