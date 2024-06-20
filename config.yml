@@ -64,6 +64,6 @@ fine_tune:
 
 # Classifier - Neural Network
 fit:
-  epochs: 50
-  batch: 32
+  epochs: 20
+  batch: 20
   verbose: "auto"
