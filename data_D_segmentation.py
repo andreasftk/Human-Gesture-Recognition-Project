@@ -31,7 +31,7 @@ sampling_rate = 100
 cutoff_frequency = 4
 normalized_cutoff_frequency = cutoff_frequency / (0.5 * sampling_rate)
 
-file_name = 'KaresiouWear_2024-06-18T18.50.10.222_F5174DCC3C91_Both.csv'
+file_name = 'KaresiouWear_2024-06-18T19.11.11.405_F5174DCC3C91_Both.csv'
 file_path = os.path.join(folder, file_name)
 
 data = pd.read_csv(file_path)
@@ -58,8 +58,8 @@ data['energy'] = normalize(data['energy'].values)
 
 threshold = 2.0
 def classify_movement(row):
-    if row['y-axis (g)'] < 0.41 and row['y-axis (g)'] > 0.33: 
-        if row['energy'] > 0.35 and row['energy'] < 0.78: 
+    if row['y-axis (g)'] < 0.34 and row['y-axis (g)'] > 0.25: 
+        if row['energy'] > 0.38 and row['energy'] < 0.46: 
             return 0
         else:
             return 1

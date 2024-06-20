@@ -3,18 +3,18 @@ import shutil
 
 # Define the base directory and the new directory
 base_dir = 'G:/Other computers/My Computer/8 Εξάμηνο/Αλγοριθμικές Θεμελιώσεις Δικτύων Αισθητήρων/Human Gesture Recognition Project/raw_data/segments_renamed'
-new_dir = os.path.join(base_dir, 'class_B')
+new_dir = os.path.join(base_dir, 'class_D')
 
 # Create the new directory if it doesn't exist
 if not os.path.exists(new_dir):
     os.makedirs(new_dir)
 
 # Define the folder pattern
-folder_pattern = 'data_B_'
+folder_pattern = 'data_D_'
 
 # Iterate through the folders
 for i in range(1, 7):  # Assuming there are 6 folders as in the example
-    folder_name = f"{folder_pattern}{i}(mp)"
+    folder_name = f"{folder_pattern}{i}(row)"
     folder_path = os.path.join(base_dir, folder_name)
     
     # Check if the folder exists
@@ -32,4 +32,4 @@ for i in range(1, 7):  # Assuming there are 6 folders as in the example
                 # Move the file to the new directory
                 shutil.move(file_path, new_file_path)
 
-print("Files have been moved to the class_A folder successfully.")
+print("Files have been moved to the class_C folder successfully.")
