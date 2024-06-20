@@ -18,7 +18,7 @@ Brief descriptions of each file:
 
 ### Setup Instructions
 
-* **Environment Setup:** Ensure Python 3.x environment with necessary libraries (pandas, numpy) installed.
+* **Environment Setup:** Ensure anaconda3 Python 3.x environment with necessary libraries (pandas, numpy, tensorflow, keras, etc.) installed.
 * **Notebook Execution:** Open Jupyter notebooks (`aiot_data_engineering.ipynb`, `aiot_dataset_creation.ipynb`, `aiot_project.ipynb`) in JupyterLab or Jupyter Notebook and execute cells sequentially.
 
 ### Notes
